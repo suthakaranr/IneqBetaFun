@@ -1,0 +1,6 @@
+Package: BetaFunBounds
+Type: Package
+Title: An R Package for New Inequalities for the Beta Function and Certain Ratios of Beta Functions
+Version: 0.0.1.0
+Authors@R: person("Suthakaran", "Ratnasingam", email = "suthakaran.ratnasingam@csusb.edu", role = c("aut", "cre"))
+RoxygenNote: 7.1.2.9000
