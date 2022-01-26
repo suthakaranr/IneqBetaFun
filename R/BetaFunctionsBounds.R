@@ -191,7 +191,7 @@ them_3_11 = function(x,y){
 corollary_2 = function(x,y){
   u_xy = function(x,y) (1/y) * x^x * (1/(x+y))^(x+y) * (y+1)^(y+1)
   if( x >=1 && y>=1 && x<=y ){
-    return(c("boud_a =", beta(x,y), "upper bound = ", min(u_xy(x,y), u_xy(y,x)) ))
+    return(c("beta_xy_a =", beta(x,y), "upper bound = ", min(u_xy(x,y), u_xy(y,x)) ))
   }
   else{
     return("Try x >=1 && y>=1 && x<=y ")
