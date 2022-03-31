@@ -7,7 +7,7 @@ them_3_1 = function(x,y){
              "lower bound = ", (x+y)*(1 - sqrt(x*y))^2 / (x*y*(x+1)*(y+1))))
   }
   else{
-    return("Try x > 0 & y > 0 & x/(x+1) + y/(y+1) <=1 & x*y < 1")
+    return("Try x > 0 & y > 0  & x*y < 1")
   }
 }
 
@@ -39,7 +39,7 @@ them_3_3 = function(x,y){
     return(c("beta_xy =", beta(x,y), "lower bound = ",  (x+y)/x * (1 - x/(x+1) - y/(y+1))  ))
   }
   else{
-    return("Try x >0 & y > 0 & x/(x+1) + y/(y+1) <= 1")
+    return("Try x >0 & y > 0 & x*y <= 1")
   }
 }
 
@@ -57,7 +57,7 @@ them_3_4 = function(x,y){
     return(c("beta_xy =", beta(x,y), "lower bound = ",  (x+y)/x * (1 - w_xy)  ))
   }
   else{
-    return("Try x >0 & y > 0 & x/(x+1) + y/(y+1) <= 1 & x*y < 1")
+    return("Try x >0 & y > 0 & x*y < 1")
   }
 }
 
