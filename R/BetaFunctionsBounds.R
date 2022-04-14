@@ -54,7 +54,7 @@ them_3_4 = function(x,y){
   w_xy = exp(-s) * (1 + s * (x/(x+1)) 
                     + (exp(s) - 1- s)* x/(x+2) ) * (1 + s * (y/(y+1)) + (exp(s) - 1- s)* y/(y+2) )
   if(x > 0 && y >0 && cond_2 <=1){
-    return(c("beta_xy =", beta(x,y), "lower bound = ",  (x+y)/x * (1 - w_xy)  ))
+    return(c("beta_xy =", beta(x,y), "lower bound = ",  ((x+y)/(x*y)) * (1 - w_xy)  ))
   }
   else{
     return("Try x >0 & y > 0 & x*y < 1")
