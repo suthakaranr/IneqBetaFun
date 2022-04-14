@@ -114,7 +114,7 @@ them_3_7 = function(x,y){
     return(c("beta_xy_b =", beta(x,y), "upper bound = ", (1-x)^(x+y-1) * pi/sin(pi*x)  ))
   }
   else{
-    return("Try x > 0 and y> 0")
+    return("Try x > 0 and y> 0 and x <= y")
   }
 }
 
