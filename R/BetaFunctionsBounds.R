@@ -178,8 +178,9 @@ them_3_11a = function(x,y){
 
 them_3_11b = function(x,y){
   u_xy = function(x,y) (1/y) * ( (1/(1+y))^(x-1) +  (0.5 * (x-1) * y) / ( (y+1)^(x-1) * (y+2) ))
- if (x >= 3 && y >= 3)
+ if (x >= 3 && y >= 3){
     return(c("beta_xy_b =", beta(x,y), "lwoer bound = ",  max(u_xy(x,y), u_xy(y,x)) ))
+   }
   else{
     return("Try other values")
   }
