@@ -161,25 +161,35 @@ them_3_10 = function(x,y){
 
 
 
-## Theorem 3.11
+## Theorem 3.11a
 
 them_3_11 = function(x,y){
   u_xy = function(x,y) (1/y) * ( (1/(1+y))^(x-1) +  (0.5 * (x-1) * y) / ( (y+1)^(x-1) * (y+2) ))
   if(x >= 3 && y > 0){
     return(c("beta_xy_a =", beta(x,y), "lower bound = ",  u_xy(x,y) ))
   }
-  else if (x >= 3 && y >= 3)
+  else{
+    return("Try other values")
+  }
+}
+
+
+## Theorem 3.11b
+
+them_3_11b = function(x,y){
+  u_xy = function(x,y) (1/y) * ( (1/(1+y))^(x-1) +  (0.5 * (x-1) * y) / ( (y+1)^(x-1) * (y+2) ))
+ if (x >= 3 && y >= 3)
     return(c("beta_xy_b =", beta(x,y), "lwoer bound = ",  max(u_xy(x,y), u_xy(y,x)) ))
   else{
     return("Try other values")
   }
 }
 
-# x >= 3 && y > 0 && y <3
-#them_3_11(4,2)
+# x >= 3 && y > 0 
+#them_3_11a(4,2)
 
 # x >= 3 && y >= 3
-#them_3_11(5,5)
+#them_3_11b(5,5)
 
 
 
