@@ -165,7 +165,7 @@ them_3_10 = function(x,y){
 
 them_3_11 = function(x,y){
   u_xy = function(x,y) (1/y) * ( (1/(1+y))^(x-1) +  (0.5 * (x-1) * y) / ( (y+1)^(x-1) * (y+2) ))
-  if(x >= 3 && y > 0 && y <3){
+  if(x >= 3 && y > 0 && y >0){
     return(c("beta_xy_a =", beta(x,y), "lower bound = ",  u_xy(x,y) ))
   }
   else if (x >= 3 && y >= 3)
