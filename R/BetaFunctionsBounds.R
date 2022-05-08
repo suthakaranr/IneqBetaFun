@@ -102,14 +102,14 @@ them_3_6 = function(x,y){
 ## Theorem 3.7
 
 them_3_7 = function(x,y){
-  if(x > 0 && y >0 && x <= y){
-    if(x < 1 && x + y <= 1){
+  if(x > 0 & y >0 & x <= y){
+    if(x < 1 & x + y <= 1){
       return(c("beta_xy_a =", beta(x,y), "lower bound = ", (1-x)^(x+y-1) * pi/sin(pi*x)  ))
     }
-    else if(x < 1 && x + y >=2){
+    else if(x < 1 & x + y >=2){
       return(c("beta_xy_a =", beta(x,y), "lower bound = ", (1-x)^(x+y-1) * pi/sin(pi*x)  ))
     }
-    else  (x < 1 && x + y > 1 &&  x + y < 2)
+    else  (x < 1 & x + y > 1 &  x + y < 2)
     return(c("beta_xy_b =", beta(x,y), "upper bound = ", (1-x)^(x+y-1) * pi/sin(pi*x)  ))
   }
   else{
