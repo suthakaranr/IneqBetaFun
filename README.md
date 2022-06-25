@@ -1,4 +1,4 @@
-The R package *IneqBetaFun* provides several new upper and lower bounds for the Beta function and the quotient of Beta functions proposed in <a style="text-decoration:none" href="../assets/2022FSRINAM.pdf" target="_blank" rel="noopener noreferrer">From and Ratnasingam (2022)</a>. Please see the examples below.
+The R package *IneqBetaFun* provides several new upper and lower bounds for the Beta function and the quotient of Beta functions proposed in <a style="text-decoration:none" href="https://suthakaranr.github.io/assets/2022FSRINAM.pdf" target="_blank" rel="noopener noreferrer">From and Ratnasingam (2022)</a>. Please see the examples below.
 
 ### Install the R package
 To install the IneqBetaFun R package directly from github, run the following in R:
